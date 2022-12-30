@@ -10,6 +10,8 @@ COPY package*.json ./
 #RUN apt-get update -y && apt-get install --no-install-recommends -y wget
 #RUN npm install
 
+RUN npm install
+
 COPY . /app
 
 ENTRYPOINT ["npm", "start"]
